@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 void main()
 {
-  //pass object of class that extends stateLess class
+  //pass object of class that extends stateless class
   AlignDemo ad1 = new AlignDemo();
   runApp(ad1);
 }

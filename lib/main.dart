@@ -10,7 +10,8 @@ import '14_row_column_demo.dart';
 import 'card_demo_1.dart';
 import 'sizebox_demo.dart';
 import 'aspect_ratio_demo.dart';
+import 'table_demo_1.dart';
 void main()
 {
-    runApp(AspectRatioDemo());
+    runApp(TableDemo1());
 }

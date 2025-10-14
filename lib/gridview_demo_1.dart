@@ -78,7 +78,6 @@ class GridviewDemo1 extends StatelessWidget {
                           fontSize: 18,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-
                         ),),
                       )
                     ],

@@ -15,7 +15,8 @@ import 'wrap_demo.dart';
 import 'listview_demo_1.dart';
 import 'listview_demo_2.dart';
 import 'gridview_demo_1.dart';
+import 'media_query_demo.dart';
 void main()
 {
-    runApp(GridviewDemo1());
+    runApp(MediaQueryDemo());
 }

@@ -58,7 +58,9 @@ class GridviewDemo1 extends StatelessWidget {
             itemCount: countries.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 childAspectRatio: 1.4,
-                crossAxisCount: 2, mainAxisSpacing: 5, crossAxisSpacing: 5),
+                crossAxisCount: 2,
+                mainAxisSpacing: 5,
+                crossAxisSpacing: 5),
             itemBuilder: (context,index){
                 return (Card(
                   elevation: 10,

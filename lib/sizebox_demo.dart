@@ -7,13 +7,13 @@ class SizeboxDemo extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Sizedbox demo, "),
-          leading: Icon(Icons.account_box),
+          title: const Text("Sizedbox demo, "),
+          leading: const Icon(Icons.account_box),
         ),
         body: Center(
           child: SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: () {}, child: Text("I am button The Easylearn"))),
+              child: ElevatedButton(onPressed: () {}, child: const Text("I am button The Easylearn"))),
         ),
       ),
     );

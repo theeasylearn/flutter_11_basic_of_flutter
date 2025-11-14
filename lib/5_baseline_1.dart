@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main()
 {
   //pass object of class that extends stateLess class
-  runApp(BaseLine1());
+  runApp(const BaseLine1());
 }
 class BaseLine1 extends StatelessWidget {
   const BaseLine1({super.key});
@@ -17,7 +17,7 @@ class BaseLine1 extends StatelessWidget {
           width: 300,
           color: Colors.indigoAccent,
           alignment: Alignment.topCenter,
-          child: Baseline(
+          child: const Baseline(
             baseline: 350,
             baselineType: TextBaseline.alphabetic,
             child: FlutterLogo(

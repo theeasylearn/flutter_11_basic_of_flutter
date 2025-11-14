@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 class RowColumnDemo1 extends StatelessWidget {
+  const RowColumnDemo1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +12,7 @@ class RowColumnDemo1 extends StatelessWidget {
               child: Container(
 
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                    borderRadius: const BorderRadius.all(Radius.circular(30)),
                     color: Colors.white,
                     boxShadow: [
                         BoxShadow(
@@ -55,7 +57,7 @@ class RowColumnDemo1 extends StatelessWidget {
         ),
         child: IconButton(onPressed: () {
           print("button clicked...");
-        }, icon: Icon(Icons.minimize),
+        }, icon: const Icon(Icons.minimize),
 
         ),
       );

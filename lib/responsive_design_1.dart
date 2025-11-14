@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 
 class MyResponsiveDesign_1 extends StatelessWidget {
+  const MyResponsiveDesign_1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
       return MaterialApp(
          home: Scaffold(
            appBar: AppBar(
-              title: Text("Responsive design"),
+              title: const Text("Responsive design"),
              
            ),
            body: LayoutBuilder(builder: (context,Screen){
-              if (Screen.maxWidth>600)
-                  return DesignForBigScreen(Screen);
-              else
-                  return DesignForMobileScreen(Screen);
+              if (Screen.maxWidth>600) {
+                return DesignForBigScreen(Screen);
+              } else {
+                return DesignForMobileScreen(Screen);
+              }
            }),
          ),
       );

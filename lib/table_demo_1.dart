@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 class TableDemo1 extends StatelessWidget {
+  const TableDemo1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(title: Text("Table Demo"),),
+          appBar: AppBar(title: const Text("Table Demo"),),
         body: Material(
             child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Table(
                   border: TableBorder.all(),
-                  columnWidths: {
+                  columnWidths: const {
                     0: FractionColumnWidth(0.52),
                     1: FractionColumnWidth(0.16),
                     2: FractionColumnWidth(0.16),
@@ -62,7 +64,7 @@ class TableDemo1 extends StatelessWidget {
   Widget MyText(String label) {
       return  Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Text(label,style:TextStyle(
+        child: Text(label,style:const TextStyle(
             fontWeight: FontWeight.bold
         ),),
       );

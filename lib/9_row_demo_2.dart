@@ -4,7 +4,7 @@ class MyRowDemo2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         home: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 class wrapDemo1 extends StatelessWidget {
+  const wrapDemo1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -7,10 +9,10 @@ class wrapDemo1 extends StatelessWidget {
       title: "Wrap demo", /* optional */
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Wrap Demo"),
+          title: const Text("Wrap Demo"),
         ),
         body: SingleChildScrollView(
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             child: Wrap(
               alignment: WrapAlignment.center,

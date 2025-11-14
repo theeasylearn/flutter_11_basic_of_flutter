@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 class ListViewDemo1 extends StatelessWidget {
+  const ListViewDemo1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Example of list view"),
+          title: const Text("Example of list view"),
         ),
         body: ListView(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           children: [
             DisplayItem("India",1),
             DisplayItem("Russia",2),
@@ -43,7 +45,7 @@ class ListViewDemo1 extends StatelessWidget {
   Widget DisplayItem(String country,int index)
   {
       return Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           border: Border.all()
         ),
@@ -52,7 +54,7 @@ class ListViewDemo1 extends StatelessWidget {
           leading: CircleAvatar(
             backgroundImage: NetworkImage("https://picsum.photos/64?random=$index"),
           ),
-          trailing: Icon(Icons.star),
+          trailing: const Icon(Icons.star),
         ),
       );
   }

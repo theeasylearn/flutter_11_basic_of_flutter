@@ -47,16 +47,18 @@ class GridviewDemo1 extends StatelessWidget {
     { "name": "Fiji", "flag": "https://flagpedia.net/data/flags/w580/fj.png", "continent": "Australia" },
     { "name": "Solomon Islands", "flag": "https://flagpedia.net/data/flags/w580/sb.png", "continent": "Australia" }
   ];
+
+  const GridviewDemo1({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Grid view example"),
+          title: const Text("Grid view example"),
         ),
         body: GridView.builder(
             itemCount: countries.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 childAspectRatio: 1.4,
                 crossAxisCount: 2,
                 mainAxisSpacing: 5,
@@ -72,11 +74,11 @@ class GridviewDemo1 extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         height: 50,
                         width: double.infinity,
-                        padding: EdgeInsets.only(top:2.5,bottom:2.5),
+                        padding: const EdgeInsets.only(top:2.5,bottom:2.5),
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.3)
                         ),
-                        child: Text(countries[index]['name'].toString(),style: TextStyle(
+                        child: Text(countries[index]['name'].toString(),style: const TextStyle(
                           fontSize: 18,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

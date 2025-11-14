@@ -48,13 +48,15 @@ final List<Map<String, String>> countries = [
 ];
 
 class LayoutbuilderDemo1 extends StatelessWidget {
+  const LayoutbuilderDemo1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("this is an example of layout builder"),
+          title: const Text("this is an example of layout builder"),
         ),
         body: LayoutBuilder(builder: (context, parent){
             return Column(
@@ -69,10 +71,10 @@ class LayoutbuilderDemo1 extends StatelessWidget {
                           itemCount: countries.length,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return Container(
+                            return SizedBox(
                               height: parent2.maxHeight * 0.80,
                               child: Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10),
                                 child: LayoutBuilder(
                                   builder: (context,parent3){
                                      return Card(
@@ -83,7 +85,7 @@ class LayoutbuilderDemo1 extends StatelessWidget {
                                            children: [
                                              Image.network("https://picsum.photos/200?random=1",
                                                height: parent3.maxHeight * 0.80,),
-                                             Text("India")
+                                             const Text("India")
                                            ],
                                          ),
                                        ),

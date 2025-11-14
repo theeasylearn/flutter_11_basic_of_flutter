@@ -48,26 +48,28 @@ class ListviewDemo2 extends StatelessWidget {
     { "name": "Solomon Islands", "flag": "https://flagpedia.net/data/flags/w580/sb.png", "continent": "Australia" }
   ];
 
+  const ListviewDemo2({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: Text("List view demo 2"),
+            title: const Text("List view demo 2"),
           ),
           body: ListView.builder(
               itemCount: countries.length,
               itemBuilder: (context,index)
               {
-                return Padding(padding: EdgeInsets.only(top: 5),
+                return Padding(padding: const EdgeInsets.only(top: 5),
                   child: Card(
                     child: Row(
                         children: [
-                          Expanded(child: Image.network(countries[index]['flag'].toString(),
+                          Expanded(flex: 1,child: Image.network(countries[index]['flag'].toString(),
                             height: 80,
                             fit: BoxFit.cover,
-                          ),flex: 1,),
-                          Expanded(child: Padding(
+                          ),),
+                          Expanded(flex: 2,child: Padding(
                             padding: const EdgeInsets.only(left: 10),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
@@ -75,15 +77,15 @@ class ListviewDemo2 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 FittedBox(
-                                  child: Text(countries[index]['name'].toString(),style: TextStyle(
+                                  child: Text(countries[index]['name'].toString(),style: const TextStyle(
                                     fontSize: 24
                                   ),),
                                 ),
-                                SizedBox(height: 10,),
+                                const SizedBox(height: 10,),
                                 Text(countries[index]['continent'].toString(),)
                               ],
                             ),
-                          ),flex: 2,)
+                          ),)
                       ],
                     ),
                   ),);

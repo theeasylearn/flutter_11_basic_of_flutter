@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 void main()
 {
   //pass object of class that extends stateLess class
-  runApp(StackDemo2());
+  runApp(const StackDemo2());
 }
 class StackDemo2 extends StatelessWidget {
   const StackDemo2({super.key});

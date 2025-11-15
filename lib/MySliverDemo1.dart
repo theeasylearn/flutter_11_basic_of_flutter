@@ -145,6 +145,22 @@ class MySliverDemo1 extends StatelessWidget
         home: Scaffold(
           body: CustomScrollView(
             slivers: [
+               SliverAppBar(title: Text("Custom Scrollview"),
+               actions: [
+                  IconButton(onPressed: () {
+
+                  }, icon: Icon(Icons.add)),
+                 IconButton(onPressed: () {
+
+                 }, icon: Icon(Icons.add_shopping_cart)),
+                 IconButton(onPressed: () {
+
+                 }, icon: Icon(Icons.delete)),
+               ],
+               floating: true,
+               pinned: false,
+               snap: true,
+               ),
                SliverList(delegate: SliverChildBuilderDelegate((context,index) {
                   return Padding(
                     padding: const EdgeInsets.only(left:10,right:10,top: 2,bottom: 2),

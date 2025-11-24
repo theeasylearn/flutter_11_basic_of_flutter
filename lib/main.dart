@@ -22,5 +22,5 @@ import 'button_demo.dart';
 // import 'media_query_demo.dart';
 void main()
 {
-    runApp(SwitchTorchSnackhar());
+    runApp(MaterialApp(home: SwitchTorchSnackhar()));
 }

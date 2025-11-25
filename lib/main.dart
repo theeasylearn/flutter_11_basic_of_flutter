@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 // import 'card_demo_1.dart';
 import 'MySliverDemo1.dart';
 import 'button_demo.dart';
+import 'camera_gallary_image.dart';
 // import 'sizebox_demo.dart';
 // import 'aspect_ratio_demo.dart';
 // import 'table_demo_1.dart';
@@ -22,5 +23,5 @@ import 'button_demo.dart';
 // import 'media_query_demo.dart';
 void main()
 {
-    runApp(MaterialApp(home: SwitchTorchSnackhar()));
+    runApp(MaterialApp(home: CameraGallaryImage()));
 }

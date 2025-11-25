@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   torch_light: ^1.1.0
   top_snackbar_flutter: ^3.3.0
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:
@@ -66,6 +67,7 @@ flutter:
      - images/cat.jpg
      - images/cat1.jpg
      - images/cat2.jpg
+     - images/picture.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

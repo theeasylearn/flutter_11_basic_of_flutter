@@ -38,6 +38,7 @@ dependencies:
   torch_light: ^1.1.0
   top_snackbar_flutter: ^3.3.0
   image_picker: ^1.1.2
+  location: ^7.0.1
 
 dev_dependencies:
   flutter_test:

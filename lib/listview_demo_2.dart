@@ -47,9 +47,6 @@ class ListviewDemo2 extends StatelessWidget {
     { "name": "Fiji", "flag": "https://flagpedia.net/data/flags/w580/fj.png", "continent": "Australia" },
     { "name": "Solomon Islands", "flag": "https://flagpedia.net/data/flags/w580/sb.png", "continent": "Australia" }
   ];
-
-  const ListviewDemo2({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

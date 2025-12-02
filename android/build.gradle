@@ -1,3 +1,19 @@
+buildscript {
+    ext {
+        // You can adjust these if you want, but these are the recommended ones
+        agp_version = '8.5.2'   // or 8.6.0 if you use Flutter 3.27+
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agp_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24"  // or newer
+        // NOTE: Do not place your application dependencies here
+    }
+}
+
 allprojects {
     repositories {
         google()
@@ -6,11 +22,18 @@ allprojects {
 }
 
 rootProject.buildDir = "../build"
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
+
+// This block is important — it makes the :app module configure first
 subprojects {
-    project.evaluationDependsOn(":app")
+    afterEvaluate { project ->
+        if (project.name != "app") {
+            project.evaluationDependsOn(":app")
+        }
+    }
 }
 
 tasks.register("clean", Delete) {

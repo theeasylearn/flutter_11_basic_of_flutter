@@ -65,7 +65,11 @@ class _CameraGallaryImageState extends State<CameraGallaryImage> {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                          DisplayTextOrImage(),
+                          SizedBox(
+                            width: double.infinity,
+                            height: 400,
+                            child: DisplayTextOrImage(),
+                          ),
                           ElevatedButton(onPressed: () async {
                               try {
                                 final XFile? pickedFile = await _picker.pickImage(

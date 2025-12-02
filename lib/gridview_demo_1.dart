@@ -48,7 +48,6 @@ class GridviewDemo1 extends StatelessWidget {
     { "name": "Solomon Islands", "flag": "https://flagpedia.net/data/flags/w580/sb.png", "continent": "Australia" }
   ];
 
-  const GridviewDemo1({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
